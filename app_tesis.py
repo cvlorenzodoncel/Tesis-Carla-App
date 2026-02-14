@@ -55,7 +55,7 @@ def iniciar_sistema_biochar():
 def iniciar_sistema_biooil():
     """Carga y entrena el modelo XGBoost + PCA para Bio-oil"""
     try:
-        df = pd.read_excel("biooil.xlsx")
+        df = pd.read_excel("Biooil.xlsx")
         cols_input = ['Cbm', 'Hbm', 'Obm', 'Nbm', 'Sbm', 'M', 'VM', 'FC', 'Ash', 'Temp', 'Vel_de_cal']
         target = 'Biooil'
         
@@ -232,3 +232,4 @@ if st.button("EJECUTAR SIMULACIÓN 🚀", type="primary", use_container_width=Tr
 else:
 
     st.info("👈 Configure los parámetros en el panel izquierdo y presione 'Ejecutar Simulación'.")
+
